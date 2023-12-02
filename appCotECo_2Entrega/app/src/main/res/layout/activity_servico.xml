@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/btn_voltar_inicio"
+        android:layout_width="55dp"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/seta_esquerda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="34dp" />
+
+    <ImageView
+        android:id="@+id/icone_coteco"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        app:srcCompat="@drawable/cot_co"
+        app:layout_constraintStart_toEndOf="@+id/btn_voltar_inicio"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/analise"
+        android:layout_width="318dp"
+        android:layout_height="69dp"
+        android:text="FAÇA SUA ANÁLISE DE COTAÇÃO DE COMPRAS"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/btn_voltar_inicio"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp" />
+
+    <TextView
+        android:id="@+id/add_arquivo_txt"
+        android:layout_width="318dp"
+        android:layout_height="25dp"
+        android:text="1. Anexe o seu arquivo base de dados:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/analise"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="225dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_arquivo"
+        android:layout_width="318dp"
+        android:layout_height="31dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:backgroundTint="#d9d9d9"
+        app:layout_constraintStart_toStartOf="@+id/add_arquivo_txt"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="260dp" />
+
+    <TextView
+        android:id="@+id/txt_arquivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arquivos aceitos: csv, txt, html, excel, .db, .sql"
+        app:layout_constraintStart_toStartOf="@+id/tb_arquivo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="305dp" />
+
+    <TextView
+        android:id="@+id/txt_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Selecione 1 critério para análise"
+        app:layout_constraintStart_toStartOf="@+id/txt_arquivo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="339dp" />
+
+    <RadioButton
+        android:id="@+id/btn_entrega1"
+        android:layout_width="256dp"
+        android:layout_height="50dp"
+        android:text="Tempo de Entrega"
+        app:layout_constraintStart_toStartOf="@+id/txt_select"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="370dp" />
+
+    <RadioButton
+        android:id="@+id/btn_preco"
+        android:layout_width="143dp"
+        android:layout_height="50dp"
+        android:text="Preço"
+        app:layout_constraintStart_toStartOf="@+id/btn_entrega1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="425dp" />
+
+    <RadioButton
+        android:id="@+id/btn_qualidade"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:text="Qualidade"
+        app:layout_constraintStart_toStartOf="@+id/txt_select"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="480dp" />
+
+    <TextView
+        android:id="@+id/txt_informe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.Informe o produto desejado (se houver)"
+        app:layout_constraintStart_toStartOf="@+id/btn_qualidade"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="525dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_produto"
+        android:layout_width="308dp"
+        android:layout_height="31dp"
+        android:background="#d9d9d9"
+        app:layout_constraintStart_toStartOf="@+id/txt_informe"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="550dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txt_inform"
+        android:layout_width="356dp"
+        android:layout_height="34dp"
+        android:text="Importante: este campo será considerado na analise apenas se este produto exitir na base de dados informada."
+        app:layout_constraintStart_toStartOf="@+id/txt_produto"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="590dp" />
+
+    <Button
+        android:id="@+id/btn_analisar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANALISAR"
+        android:backgroundTint="#FFA500"
+        app:layout_constraintStart_toStartOf="@+id/txt_inform"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="640dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

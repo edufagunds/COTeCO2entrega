@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_voltar_inicio"
+        android:layout_width="72dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="86dp"
+        app:layout_constraintBottom_toTopOf="@+id/cont_edu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/seta_esquerda" />
+
+    <ImageView
+        android:id="@+id/icone_coteco3"
+        android:layout_width="76dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toEndOf="@+id/img_voltar_inicio"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cot_co" />
+
+
+    <TextView
+        android:id="@+id/cont_edu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="9dp"
+        android:text="Eduardo Correa"
+        app:layout_constraintBottom_toTopOf="@+id/email_edu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_voltar_inicio" />
+
+    <TextView
+        android:id="@+id/email_edu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:text="rm97195@fiap.com.br"
+        app:layout_constraintBottom_toTopOf="@+id/cont_luiz"
+        app:layout_constraintStart_toStartOf="@+id/cont_edu"
+        app:layout_constraintTop_toBottomOf="@+id/cont_edu" />
+
+    <TextView
+        android:id="@+id/cont_luiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="25dp"
+        android:text="Luiz Henrique J. Nascimento"
+        app:layout_constraintBottom_toTopOf="@+id/email_luiz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_edu" />
+
+    <TextView
+        android:id="@+id/email_luiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="26dp"
+        android:text="rm96335@fiap.com.br"
+        app:layout_constraintBottom_toTopOf="@+id/cont_murilo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cont_luiz" />
+
+    <TextView
+        android:id="@+id/cont_murilo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="30dp"
+        android:text="Murilo Ariel Reis"
+        app:layout_constraintBottom_toTopOf="@+id/email_murilo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_luiz" />
+
+    <TextView
+        android:id="@+id/email_murilo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="31dp"
+        android:text="rm97002@fiap.com.br"
+        app:layout_constraintBottom_toTopOf="@+id/cont_samuel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cont_murilo" />
+
+    <TextView
+        android:id="@+id/cont_samuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="25dp"
+        android:text="Samuel Enderson Lima da Silva"
+        app:layout_constraintBottom_toTopOf="@+id/email_samu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_murilo" />
+
+    <TextView
+        android:id="@+id/email_samu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="213dp"
+        android:text="rm96677@fiap.com.br"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cont_samuel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

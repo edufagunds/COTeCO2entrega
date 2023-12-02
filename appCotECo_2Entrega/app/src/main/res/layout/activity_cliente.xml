@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_voltar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="217dp"
+        app:layout_constraintEnd_toStartOf="@+id/icone_coteco2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/seta_esquerda" />
+
+    <ImageView
+        android:id="@+id/icone_coteco2"
+        android:layout_width="0dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_voltar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cot_co" />
+
+    <ImageView
+        android:id="@+id/img_minhaconta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="81dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_cotacoes"
+        app:layout_constraintEnd_toStartOf="@+id/img_cotacoes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_conta"
+        app:srcCompat="@drawable/minha_conta" />
+
+    <ImageView
+        android:id="@+id/img_contato"
+        android:layout_width="138dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="79dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_minhaconta"
+        app:srcCompat="@drawable/contato" />
+
+    <ImageView
+        android:id="@+id/img_cotacoes"
+        android:layout_width="0dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_minhaconta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cotacoes" />
+
+    <TextView
+        android:id="@+id/txt_conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="Minha Conta"
+        app:layout_constraintBottom_toTopOf="@+id/img_cotacoes"
+        app:layout_constraintEnd_toEndOf="@+id/img_minhaconta"
+        app:layout_constraintTop_toTopOf="@+id/txt_contacoes" />
+
+    <TextView
+        android:id="@+id/txt_contato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contato"
+        app:layout_constraintBottom_toTopOf="@+id/img_contato"
+        app:layout_constraintEnd_toEndOf="@+id/img_contato"
+        app:layout_constraintStart_toStartOf="@+id/img_contato" />
+
+    <TextView
+        android:id="@+id/txt_contacoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="Minhas Cotações"
+        app:layout_constraintBottom_toTopOf="@+id/img_cotacoes"
+        app:layout_constraintStart_toStartOf="@+id/img_cotacoes" />
+</androidx.constraintlayout.widget.ConstraintLayout>

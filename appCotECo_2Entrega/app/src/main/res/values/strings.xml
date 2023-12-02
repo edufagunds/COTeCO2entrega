@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">appCotECo_2Entrega</string>
+    <string name="title_activity_sobre">activity_sobre</string>
+    <string name="title_activity_contato">activity_contato</string>
+    <string name="title_activity_servico">activity_servico</string>
+    <string name="title_activity_cliente">activity_cliente</string>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>
